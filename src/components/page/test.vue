@@ -6,6 +6,7 @@
                     <i class="el-icon-tickets"></i> 课程管理</el-breadcrumb-item>
             </el-breadcrumb>
         </div>
+
         <div class="container">
             <div class="handle-box">
                 <el-form :model="selectForm"  ref="selectForm">
@@ -283,57 +284,6 @@
     }
 </style>
 
-
-
-<template>
-    <div class="table">
-        <div class="crumbs">
-            <el-breadcrumb separator="/">
-                <el-breadcrumb-item>
-                    <i class="el-icon-tickets"></i> 课程管理</el-breadcrumb-item>
-            </el-breadcrumb>
-        </div>
-        <div class="container">
-            <div class="handle-box">
-                <el-form :model="selectForm"  ref="selectForm">
-                    <el-select v-model="selectForm.selectSchool" placeholder="全部学校" class="handle-select mr10">
-                        <el-option key="1" label="福州大学" value="福州大学"></el-option>
-                        <el-option key="2" label="福建师范大学" value="福建师范大学"></el-option>
-                    </el-select>
-                    <el-input v-model="selectForm.selectKeyWord" placeholder="请输入课程" class="handle-input mr10"></el-input>
-                    <el-button type="primary" @click="submitForm(selectForm)">搜索</el-button>
-                </el-form>
-            </div>
-            <el-table  :data="tableData" border style="width: 100%" ref="multipleTable" >
-                <el-table-column type="selection" width="55"></el-table-column>
-                <el-table-column  prop="course" label="课程名称"  width="120">
-                </el-table-column>
-                <el-table-column prop="teacher" label="教师姓名" with="120">
-                </el-table-column>
-                <el-table-column prop="college" label="院系" width="150">
-                </el-table-column>
-                <el-table-column prop="term" label="学期" width="120">
-                </el-table-column>
-                <el-table-column prop="time" label="上课时间" width="120">
-                </el-table-column>
-                <el-table-column prop="address" label="地点" width="120">
-                </el-table-column>
-                <el-table-column prop="class" label="班级" width="120">
-                </el-table-column>
-                <el-table-column label="操作" width="150">
-                    <template slot-scope="scope">
-                        <el-button size="small" @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
-                        <el-button size="small" type="danger" @click="handleDelete(scope.$index, scope.row)">删除</el-button>
-                    </template>
-                </el-table-column>
-            </el-table>
-
-        </div>
-
-
-
-    </div>
-</template>
 <script>
     export default {
         data() {
