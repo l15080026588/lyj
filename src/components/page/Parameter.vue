@@ -69,6 +69,7 @@
 </template>
 
 <script>
+ import draggable from 'vuedraggable' 
     export default {
         data() {
             var checkkeyword = (rule, value, callback) => {
