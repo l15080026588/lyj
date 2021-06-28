@@ -9,7 +9,6 @@
     <div class="container">
       <div class="handle-box">
 
-
         <el-select v-model="selectProvince" placeholder="请选择省份" class="handle-select mr10">
           <el-option key="1" label=广东省 value="广东省"></el-option>
           <el-option key="2" label="湖南省" value="湖南省"></el-option>

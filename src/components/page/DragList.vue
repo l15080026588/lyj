@@ -9,7 +9,6 @@
             <div class="plugins-tips">
                 Vue.Draggable：基于 Sortable.js 的 Vue 拖拽组件。
                 访问地址：<a href="https://github.com/SortableJS/Vue.Draggable" target="_blank">Vue.Draggable</a>
-                
             </div>
             <div class="drag-box">
                 <div class="drag-box-item">

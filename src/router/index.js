@@ -74,7 +74,6 @@ export default new Router({
                         requireAuth:true
                     }
                 },
-                
                 {
                     // 拖拽列表组件
                     path: '/drag',

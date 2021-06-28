@@ -18,7 +18,6 @@
                 <el-button type="primary" icon="search" @click="addUser">添加</el-button>
             </div>
 
-
             <el-table :data="data" border style="width: 100%" ref="multipleTable" @selection-change="handleSelectionChange">
                 <el-table-column type="selection" width="55"></el-table-column>
                 <el-table-column prop="name" label="省份" sortable width="150">

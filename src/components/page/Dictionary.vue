@@ -13,7 +13,6 @@
                     <el-button type="primary" icon="search" @click="search(selectForm)">查询</el-button>
                     <el-button type="primary" icon="search" @click="addUser()" >创建数据字典</el-button>
 
-
                 </el-form>
             </div>
         <el-table :data="tableData" border style="width: 100%" ref="multipleTable" @selection-change="handleSelectionChanges">

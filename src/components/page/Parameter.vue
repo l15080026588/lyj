@@ -5,7 +5,6 @@
                 <el-breadcrumb-item>
                     <i class="el-icon-tickets"></i>系统参数</el-breadcrumb-item>
             </el-breadcrumb>
-            
         </div>
         <div class="container">
             <div class="handle-box">
