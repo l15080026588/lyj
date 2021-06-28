@@ -8,6 +8,9 @@ const dashboard = resolve => require(['../components/page/Dashboard.vue'], resol
 const table = resolve => require(['../components/page/BaseTable.vue'], resolve)
 const tab = resolve => require(['../components/page/Tabs.vue'], resolve)
 const form = resolve => require(['../components/page/BaseForm.vue'], resolve)
+//const editor = resolve => require(['../components/page/VueEditor.vue'], resolve)
+//const markdown = resolve => require(['../components/page/Markdown.vue'], resolve)
+//const upload = resolve => require(['../components/page/Upload.vue'], resolve)
 const drag = resolve => require(['../components/page/DragList.vue'], resolve)
 const permission = resolve => require(['../components/page/Permission.vue'], resolve)
 const login = resolve => require(['../components/page/Login.vue'], resolve)
@@ -74,7 +77,39 @@ export default new Router({
                         requireAuth:true
                     }
                 },
+                /*{
+                    // 富文本编辑器组件
+                    path: '/editor',
+                    component: editor,
+                    name: 'editor',
+                    meta: {
+                        title: '富文本编辑器',
+                        requireAuth:true
+                    }
+                },
                 
+                {
+                    // markdown组件
+                    path: '/markdown',
+                    component: markdown,
+                    name: 'markdown',
+                    meta: {
+                        title: 'markdown编辑器',
+                        requireAuth:true
+                    }
+                },
+                
+                {
+                    // 图片上传组件
+                    path: '/upload',
+                    component: upload,
+                    name: 'upload',
+                    meta: {
+                        title: '文件上传',
+                        requireAuth:true
+                    }
+                },
+                */
                 {
                     // 拖拽列表组件
                     path: '/drag',
