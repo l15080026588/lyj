@@ -13,9 +13,14 @@ import VueResource from 'vue-resource'
 import Vuex from 'vuex'
 import store from './vuex/store'
 import VueRouter from 'vue-router';
+/*
+import VueQuillEditor from 'vue-quill-editor'
 
+import 'quill/dist/quill.core.css' // import styles
+import 'quill/dist/quill.snow.css' // for snow theme
+import 'quill/dist/quill.bubble.css' // for bubble theme
 
-
+*/
 
 Vue.use(VueRouter);
 Vue.use(Vuex)
@@ -23,8 +28,9 @@ Vue.use(VueResource)
 Vue.component(VeLine.name, VeLine);
 Vue.component(VeMap.name,VeMap)
 Vue.component(VeHistogram.name,VeHistogram)
+//Vue.use(VueQuillEditor, /* { default global options } */)
 // charts end
-Vue.use(ElementUI, { size: 'small' });
+Vue.use(ElementUI);
 Vue.prototype.$axios = axios;
 
 //使用钩子函数对路由进行权限跳转
