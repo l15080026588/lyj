@@ -21,6 +21,7 @@
                 <el-table-column type="selection" width="55"></el-table-column>
                 <el-table-column prop="course" label="课程名称"  width="120">
 
+
                 </el-table-column>
                 <el-table-column prop="teacher" label="教师姓名" with="120">
                 </el-table-column>
